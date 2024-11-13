@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+<div class="w-100 flex justify-center flex-col items-center h-screen">
+    <div class="card col-span-8 mx-2 mb-5">
+        <h3 class="title">Iniciar Sesión</h3>
+
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <mat-label class="form-label">Identificación</mat-label>
+            <mat-form-field appearance="outline">
+                <input matInput placeholder="Identificación" formControlName="username">
+                <mat-error *ngIf="loginForm.get('username')?.hasError('required')">
+                    El nombre de usuario es requerido
+                </mat-error>
+                <mat-error *ngIf="loginForm.get('username')?.hasError('pattern')">
+                    El nombre de usuario no es válido
+                </mat-error>
+            </mat-form-field>
+
+            <mat-label class="form-label">Contraseña</mat-label>
+            <mat-form-field appearance="outline">
+                <input matInput type="password" placeholder="Contraseña" formControlName="password">
+                <mat-error *ngIf="loginForm.get('password')?.hasError('required')">
+                    La contraseña es requerida
+                </mat-error>
+            </mat-form-field>
+            <button mat-flat-button color="primary" type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        </form>
+    </div>
+</div>
+
+<app-footer></app-footer>

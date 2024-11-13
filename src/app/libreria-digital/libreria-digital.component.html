@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<main
+  class="w-full min-h-screen flex justify-center flex-col items-center px-4 md:px-8 bg-center bg-cover relative"
+  style="
+    background-image: url(https://cdn.urbe.edu/portal-urbe/images/university/fachada-completa.jpg);
+  "
+>
+
+  <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
+
+  <div class="w-full flex justify-center items-center relative z-10 mt-24">
+
+    <h1 class="text-4xl font-bold text-white title text-center text-shadow">
+      Librería Digital
+    </h1>
+  </div>
+
+  <div class="w-full flex justify-center items-center mt-8 relative z-10">
+    <app-menu-options
+      [options]="options"
+      class="w-full md:w-3/4 lg:w-2/3"
+    ></app-menu-options>
+  </div>
+</main>
+
+<app-footer></app-footer>

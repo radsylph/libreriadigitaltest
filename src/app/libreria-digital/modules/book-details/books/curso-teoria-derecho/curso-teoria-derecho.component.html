@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Curso de Teoría del Derecho</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">El libro "Curso de Teoría del Derecho" de José Martínez de Pisón Cavero, publicado en 2013 por la Universidad de la Rioja, se presenta como una guía concisa y accesible para adentrarse en el estudio del derecho. Dirigido principalmente a estudiantes de primer curso, este libro simplifica conceptos complejos de la filosofía del derecho y los adapta a los planes de estudio actuales. Con un enfoque pedagógico y un lenguaje claro, el autor facilita la comprensión de temas fundamentales como la naturaleza del derecho, las fuentes jurídicas, las teorías del derecho y la interpretación legal. Esta obra, basada en apuntes de clase, se convierte en un recurso invaluable para estudiantes y cualquier persona interesada en los fundamentos teóricos del derecho.</p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">José Martínez de Pisón Cavero</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">Universidad de la Rioja</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">2013</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/CursoDeTeoriaDelDerecho.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%; height: 1200px"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

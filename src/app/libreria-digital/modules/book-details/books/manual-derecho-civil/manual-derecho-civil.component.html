@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Manual de Derecho Civil: Personas</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">Este manual de Derecho Civil: Personas, es una obra que se ha elaborado con la finalidad de ofrecer a los estudiantes de Derecho una herramienta de estudio que les permita comprender los conceptos fundamentales de la materia, así como los aspectos más relevantes de la regulación jurídica de las personas físicas y jurídicas. La obra se ha estructurado en cuatro capítulos, en los que se abordan los siguientes temas: la personalidad jurídica, la capacidad jurídica, el domicilio, la nacionalidad, el estado civil, la ausencia, la presunción de muerte, la emancipación, la mayoría de edad, la minoría de edad, la incapacidad, la prodigalidad, la inhabilitación, la tutela, la curatela, la patria potestad, la adopción, la filiación, la legitimación adoptiva, la legitimación filial, la legitimación matrimonial, la legitimación por posesión de estado, la legitimación por reconocimiento, la legitimación por sentencia, la legitimación por adopción, la legitimación por filiación matrimonial, la legitimación por filiación no matrimonial. La obra incluye un glosario de términos jurídicos, que facilita la comprensión de los conceptos jurídicos abordados en el texto.</p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">Annalisa Poles de Graciotti, Jorge Leal Rangel, Marjorie Muttutat Muñoz, Nelson Grimaldo Hernández, Rina Mazuera Arias, Sergio Campana Zerpa</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">Fundación para el Desarrollo y Estudio del Derecho</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">2013</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/Manual-de-Derecho-Civil-Personas.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%; height: 1200px"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

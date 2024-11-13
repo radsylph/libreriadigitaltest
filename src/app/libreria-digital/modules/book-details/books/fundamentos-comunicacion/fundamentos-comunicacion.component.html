@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Fundamentos de la Comunicación</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">
+                        "Fundamentos de la Comunicación" de Dionne Valentina Santos García es una obra introductoria que explora los conceptos básicos y esenciales de la comunicación. La autora nos guía a través de los elementos clave que conforman el proceso comunicativo, desde el emisor y el receptor hasta los canales y los códigos utilizados. A través de un lenguaje claro y accesible, Santos García nos invita a reflexionar sobre la importancia de la comunicación en nuestras vidas y en las relaciones interpersonales. El libro aborda temas como los diferentes tipos de comunicación (verbal, no verbal, escrita), los modelos de comunicación y los factores que pueden influir en la efectividad de un mensaje. Es una lectura ideal para aquellos que desean adquirir una base sólida en el campo de la comunicación y comprender mejor cómo nos relacionamos con los demás a través del lenguaje.
+                    </p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">Dionné Valentina Santos García</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">
+                        Red Tercer Milenio</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">2012</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/fundamentos-de-la-comunicacion.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%; height: 1100px"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

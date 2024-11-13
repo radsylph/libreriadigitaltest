@@ -1,0 +1,40 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Cosas, Bienes y Derechos Reales. Derecho Civil II</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">
+                        El libro "Cosas, Bienes y Derechos Reales. Derecho Civil II" de José Luis Aguilar Gorrondona, publicado por la Universidad Católica Andrés Bello (UCAB) en 2012, constituye una obra fundamental para el estudio del Derecho Civil venezolano. Este texto académico aborda de manera sistemática y didáctica los conceptos fundamentales relacionados con las cosas, los bienes y los derechos reales, incluyendo un análisis detallado del derecho de propiedad, sus atributos, limitaciones y modos de adquisición. La obra también examina los derechos reales limitados como el usufructo, las servidumbres, el uso y la habitación, así como la enfiteusis, dedicando además una sección importante al estudio de la posesión, sus elementos y efectos jurídicos. El autor, reconocido como una autoridad en la materia, presenta el contenido con un lenguaje claro y preciso, apoyándose en jurisprudencia y doctrina venezolana, lo que hace de este libro una referencia indispensable tanto para estudiantes de Derecho como para profesionales del ámbito jurídico.
+                    </p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">José Luis Aguilar Gorrondona</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">Universidad Católica Andrés Bello</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">2012</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/Cosas-Bienes-y-Derechos-Reales.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%; height: 1200px"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

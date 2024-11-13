@@ -1,0 +1,40 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Desarrollo de Aplicaciones Web</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">
+                        El libro "Desarrollo de Aplicaciones Web" de Carles Mateu es una guía completa y actualizada para adentrarse en el mundo de la programación web. Desde los fundamentos de HTML, CSS y JavaScript hasta conceptos más avanzados como bases de datos y servicios web, esta obra ofrece una explicación clara y concisa de todos los aspectos necesarios para construir aplicaciones web funcionales y atractivas. Con numerosos ejemplos prácticos y una estructura didáctica, el libro resulta ideal tanto para principiantes como para desarrolladores con experiencia que deseen ampliar sus conocimientos. Además, cubre las últimas tendencias y tecnologías del sector, lo que lo convierte en una referencia imprescindible para mantenerse al día en este campo en constante evolución.
+                    </p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">Carles Mateu</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">Universidad Abierta de Cataluña</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">2004</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/Desarrollo-aplicaciones-web.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%; height: 1100px"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

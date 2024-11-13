@@ -1,0 +1,37 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body { 
+    height: 100%; 
+}
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #182F41;
+    margin-bottom: 5px;
+}
+
+.btn-primary{
+    background-color: #35576E !important;
+}
+
+.title {
+    color: #182F41;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

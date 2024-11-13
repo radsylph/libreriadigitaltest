@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Historia del Diseño Gráfico. 4ta Edición</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">
+                        En su primera edición de 1983, La historia del diseño gráfico recibió por parte de los miembros de la Asociación Americana de Editores la denominación de Óhito en la historia de la edición". En su cuarta edición, esta obra fundacional continúa su larga tradición de proveer un conocimiento equilibrado y completo. Proporciona un texto lúcido y pies de foto interpretativos, con cientos de imágenes a todo color y con la más avanzada información; e incluye un capítulo sobre el diseño de tipografía moderna. Esta recopilación histórica revela, entre otros temas, la invención de la escritura y los alfabetos, los manuscritos medievales, los orígenes de la impresión y la tipografía, el diseño gráfico renacentista, el movimiento arts and crafts, la gráfica victoriana y el art nouveau, el arte moderno y su impacto en el diseño, la identidad visual y las imágenes conceptuales, el diseño posmoderno y la revolución de la gráfica de los ordenadores.
+                    </p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">Philip B. Meggs y Alston W. Purvis</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">RM Verlag</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">1983</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/Historia-del-Diseno-Grafico.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%"
+                    [style.height.px]="800"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

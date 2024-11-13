@@ -1,0 +1,72 @@
+<app-header></app-header>
+
+<main
+  class="w-full min-h-screen flex justify-center flex-col items-center px-6 py-16 bg-gradient-to-r from-blue-200 via-indigo-200 to-purple-200 relative"
+>
+  <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
+
+  <div class="w-full max-w-3xl mx-auto z-10">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-semibold text-gray-900">Contacto</h1>
+      <p class="text-lg text-gray-700 mt-2">
+        Envíanos un mensaje, estaremos encantados de ayudarte.
+      </p>
+    </div>
+
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-xl mx-auto z-10">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-6">
+        <div class="flex flex-col">
+          <mat-label for="name">Nombre</mat-label>
+          <mat-form-field appearance="outline" class="w-full">
+            <input
+              matInput
+              type="text"
+              id="name"
+              formControlName="name"
+              placeholder="Tu nombre"
+            />
+          </mat-form-field>
+        </div>
+
+        <div class="flex flex-col">
+          <mat-label for="email">Email</mat-label>
+          <mat-form-field appearance="outline" class="w-full">
+            <input
+              matInput
+              type="email"
+              id="email"
+              formControlName="email"
+              placeholder="Tu correo electrónico"
+            />
+          </mat-form-field>
+        </div>
+
+        <div class="flex flex-col">
+          <mat-label for="message">Mensaje</mat-label>
+          <mat-form-field appearance="outline" class="w-full">
+            <textarea
+              matInput
+              id="message"
+              formControlName="message"
+              placeholder="Tu mensaje"
+              rows="6"
+            ></textarea>
+          </mat-form-field>
+        </div>
+
+        <div class="flex justify-center">
+          <button
+            mat-raised-button
+            color="primary"
+            type="submit"
+            class="px-6 py-3 text-lg font-medium rounded-lg shadow-lg hover:shadow-xl focus:ring-4 focus:ring-indigo-300 transition-all duration-300"
+          >
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<app-footer></app-footer>

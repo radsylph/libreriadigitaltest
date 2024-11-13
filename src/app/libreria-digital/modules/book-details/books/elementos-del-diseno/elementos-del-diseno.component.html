@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Los Elementos del Diseño Gráfico. Manual de estilo para diseñadores gráficos</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">
+                        Este libro es un manual exhaustivo y entretenido que incluye cientos de consejos prácticos y de ejemplos destinados a que los diseñadores gráficos desarrollen los conocimientos, las habilidades y la intuición que exige el buen diseño. Los elementos del diseño es un manual sólido y lúcido que analiza de forma exhaustiva los fundamentos de la tipografía, la maquetación, el uso del color, el espacio, la imagen y los modos de integrar el conjunto. Ofrece grandes consejos que atañen a los principios del diseño pero, además, muestra cómo romper las normas básicas sin comprometer la comunicación o confundir al público.
+                    </p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">Timothy Samara</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">Editorial Gustavo Gili, S.L.</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">2008</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/Los-elementos-del-diseno.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%"
+                    [style.height.px]="765"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

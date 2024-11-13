@@ -1,0 +1,42 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Seguridad informática y alta disponibilidad</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">
+                        Hoy en día la seguridad informática y la necesidad de garantizar una alta disponibilidad de la información ha pasado a ser una faceta importantísima para la mayoría de las empresas, independientemente del sector al que pertenezcan, debido a la gran dependencia que éstas tienen de multitud de herramientas informáticas: software de gestión, contabilidad, etc.
+                        <br>
+                        A través de este manual de prácticas no se pretende dar una solución directa a los problemas de seguridad que pueda tener una determinada empresa, ni tampoco se van a presentar "recetas" que puedan protegernos de ciertas amenazas. Esta no es su pretensión. La finalidad que se persigue no va ser otra más que la de presentar diferentes posibilidades de mejora de nuestra infraestructura informática que podrían prevenir la aparición de posibles problemas de seguridad a posteriori.
+                    </p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">Arturo Martín Romero</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">IES Tiempos Modernos</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">2013</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/Seguridad-Informatica-y-Alta-Disponibilidad.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%; height: 1200px"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

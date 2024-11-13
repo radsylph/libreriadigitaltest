@@ -1,0 +1,40 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Contabilidad Básica</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">
+                        La cuarta edición de esta obra incluye temas como la historia de la contabilidad y el tratamiento contable del IVA. Además, explica la importancia de la técnica contable en los últimos decenios y la participación de organismos internacionales para homogeneizar la información financiera en el mundo, la estructura de la contabilidad financiera basada en Normas de Información Financiera y las reglas particulares de evaluación. También, se presenta la información financiera con criterios de aplicación funcionales. Adicionalmente, cuenta con numerosos ejercicios elaborados en un cuaderno de ejercicios para la fácil aplicación y desarrollo de los mismos.
+                    </p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">Joaquín Moreno Fernández</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">Grupo Editorial Patria</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">2014</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/contabilidad-basica.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%; height: 1050px"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

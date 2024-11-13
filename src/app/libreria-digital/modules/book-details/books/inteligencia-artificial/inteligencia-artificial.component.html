@@ -1,0 +1,52 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Inteligencia Artificial</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">
+                        Este libro es una introducción al area de la Inteligencia Artificial y presenta algunas de las aplicaciones que puede tener en la vida real en diversos campos de aplicación, El libro esta compuesto de ocho capítulos los cuales abarcan los antededentes, algunos conceptos importantes para la resolución de problemas como es la representación de conocimiento, el planteamiento de los problemas. Asimismo se menciona la teoría de agentes por un lado y por otro lo que es el aprendizaje computacional. Otra area que se aborta es la computación evolutivo y los algoritmos bioinspirados para la resolución de problemas, dandole enfasis a los problemas de optimizacion. Por ultimo se menciona una nueva tendencia en el area de las ciencias computacionales como es el uso de las GPUs para trabajar de una manera mas rapida al realizar el procesamiento en paralelo.
+                    </p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">Julio Cesar Ponce Gallegos, Aurora Torres Soto,
+                        Fátima Sayuri Quezada Aguilera,
+                        Antonio Silva Sprock,
+                        Ember Ubeimar Martínez Flor,
+                        Ana Casali,
+                        Eliana Scheihing,
+                        Yván Jesús Túpac Valdivia,
+                        Ma. Dolores Torres Soto,
+                        Francisco Javier Ornelas Zapata,
+                        José Alberto Hernández,
+                        Crizpín Zavala,
+                        Nodari Vakhnia y
+                        Oswaldo Pedreño</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">Iniciativa Latinoamericana de Libros de Texto Abiertos (LATIn)</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">2014</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/Inteligencia-Artificial.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%; height: 1200px"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

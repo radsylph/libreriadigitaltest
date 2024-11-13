@@ -1,0 +1,22 @@
+<div id="navBar" class="mb-1">
+  <img
+    src="./../../../../assets/logoNuevo.jpg"
+    alt="Logo de la Librería Digital"
+    id="headLogo"
+  />
+  <nav>
+    <ul class="navLinks">
+      <li *ngIf="router.url.includes('/libreria-digital')">
+        <a class="headLink" routerLink="/libreria-digital">Inicio</a>
+      </li>
+      <li>
+        <a class="headLink" routerLink="/libreria-digital/about-us"
+          >Sobre Nosotros</a
+        >
+      </li>
+      <li>
+        <a class="headLink" routerLink="/libreria-digital/contact">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+</div>

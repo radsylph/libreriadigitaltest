@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Psicología de la Comunicación</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">
+                        "Psicología de la Comunicación" de Mercè Martínez Torres es una obra que profundiza en los aspectos psicológicos que subyacen en el proceso de comunicación humana. La autora explora cómo la comunicación no es solo un intercambio de información, sino un fenómeno complejo que involucra emociones, percepciones, lenguaje y relaciones interpersonales. A través de un análisis detallado, Martínez Torres desentraña los mecanismos cognitivos y afectivos que influyen en la forma en que nos comunicamos, desde la interacción cara a cara hasta las comunicaciones masivas. El libro aborda temas como la comunicación no verbal, el lenguaje, la persuasión, la negociación y la resolución de conflictos, proporcionando al lector una visión integral de la psicología de la comunicación y sus aplicaciones en diversos contextos.
+                    </p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">Mercè Martínez Torres</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">
+                        José Noguera (Autopublicado)</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">2012</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/PsicologiaComunicacion.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%; height: 1100px"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

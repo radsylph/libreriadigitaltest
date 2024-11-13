@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+.card {
+  width: 80%;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card shadow and hover effect */
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form elements styling */
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  border-color: #35576e;
+}
+
+input, textarea {
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  border-color: #35576e;
+  box-shadow: 0 0 10px rgba(53, 87, 110, 0.2);
+}
+
+button {
+  background-color: #35576e;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2d4a62;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(53, 87, 110, 0.5);
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #35576e;
+}
+
+p {
+  color: #555;
+  font-size: 18px;
+}
+
+/* Centering form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Manual de Fotografía</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">
+                        El "Manual de Fotografía" de José Noguera es una guía completa y accesible para principiantes en el mundo de la fotografía. Desde sus inicios hasta la era digital, el libro explora los conceptos fundamentales de la fotografía, como la historia de la cámara, el funcionamiento del objetivo, el obturador y el diafragma. Con un lenguaje sencillo y claro, Noguera te llevará de la mano para que comprendas los elementos básicos y puedas mejorar tus habilidades fotográficas. Ya seas un entusiasta que acaba de adquirir su primera cámara o alguien que busca refrescar sus conocimientos, este manual te proporcionará las herramientas necesarias para capturar imágenes de calidad.
+                    </p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">José Noguera</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">
+                        José Noguera (Autopublicado)</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">2014</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/Manual-de-Fotografia.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%; height: 1100px"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

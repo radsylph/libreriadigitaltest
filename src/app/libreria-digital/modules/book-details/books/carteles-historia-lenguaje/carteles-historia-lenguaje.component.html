@@ -1,0 +1,40 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Los carteles: su historia y su lenguaje</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">
+                        La aparición del cartel en la forma que actualmente conocemos se remonta a 1870, época en que la perfección de las técnicas de litografía en color posibilitó su producción en serie. Apenas fue necesario un siglo para conocer el cartel como una forma de arte vivo; cautivó a los artistas más destacados de aquél momento, entre los cuales cabe destacar a Toulouse-Lautrec, a los diseñadores de art nouveau, simbolistas y cubistas, artistas y tipógrafos revolucionarios de la Bauhaus y de Stijl, y a los hippies y la cultura underground de los sesenta. John Barnicoat analiza en este libro las conexiones que existen entre el arte, demandas comerciales, política, testimonio popular y otros factores sociológicos que intervienen en la producción de carteles. Esta obra muestra 273 reproducciones de carteles, de los cuales 72 son en color.
+                    </p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">John Barnicoat</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">Editorial Gustavo Gili, S.L.</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">2013</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/Los-carteles-su-historia-y-su-lenguaje.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%; height: 1200px"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

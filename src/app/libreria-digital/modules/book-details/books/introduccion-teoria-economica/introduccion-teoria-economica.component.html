@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Introducción a la Teoría Económica</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">
+                        Este libro se presenta como una guía fundamental para adentrarse en el apasionante mundo de la economía. A través de un lenguaje claro y conciso, la obra explora los conceptos básicos y los principios fundamentales que rigen el funcionamiento de los sistemas económicos. Desde la escasez y las elecciones hasta los mercados y el papel del Estado, el texto ofrece una visión integral de la teoría económica. Además, incluye numerosos ejemplos y casos prácticos que permiten al lector comprender de manera intuitiva los conceptos teóricos. La obra se destaca por su enfoque didáctico, que facilita la comprensión de los estudiantes universitarios y cualquier persona interesada en ampliar sus conocimientos en economía. En resumen, este libro es una herramienta invaluable para quienes desean adquirir una base sólida en teoría económica y comprender mejor las fuerzas que moldean nuestra sociedad.
+                    </p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">Manuel Pernaut
+                        Ardanaz y Eduardo Ortiz F.</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">Universidad Católica Andrés Bello</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">2015</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/introduccion-teoria-economica.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%; height: 1200px"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

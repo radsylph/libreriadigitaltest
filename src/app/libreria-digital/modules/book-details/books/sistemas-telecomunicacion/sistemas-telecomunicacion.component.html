@@ -1,0 +1,40 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Introducción a los Sistemas de Telecomunicaciones</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">
+                        Resultado de la compilación de los apuntes de clase, a lo largo de los últimos años, de la carrera de Ingeniería de Telecomunicación en la Universidad de Cantabria, es una obra destinada no sólo a los estudiantes sino a todos los interesados por iniciarse en algunos aspectos fundamentales de los sistemas de comunicaciones eléctricas, donde se ha prescindido, en la medida de lo posible, de tratamientos matemáticos complicados, buscando un enfoque práctico. Trata temas básicos orientados fundamentalmente a los sistemas radioeléctricos, con un enfoque hacia los sistemas analógicos, aplicables igualmente a los digitales.
+                    </p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">Constantino Pérez Vega, José María Zamanillo Sáinz de la Maza, Alicia Casanueva López</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">Universidad de Cantabria</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">2007</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/Introduccion-a-los-Sistemas-de-Telecomunicacion.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%; height: 950px"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

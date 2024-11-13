@@ -1,0 +1,40 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Fundamentos de Contabilidad Financiera</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">
+                        Este libro se presenta como una guía introductoria al mundo de la contabilidad financiera, diseñada para estudiantes universitarios y profesionales que buscan comprender los principios básicos y las herramientas fundamentales de esta disciplina. A través de un lenguaje claro y conciso, la obra explora los conceptos clave de la contabilidad, desde la ecuación contable y el ciclo contable hasta la elaboración de los estados financieros. Además, proporciona ejemplos prácticos y ejercicios resueltos que facilitan la asimilación de los conocimientos teóricos. La obra se destaca por su enfoque didáctico, que permite al lector construir una base sólida en contabilidad financiera y aplicar estos conocimientos en situaciones reales. Asimismo, se alinea con las normas contables vigentes, lo que garantiza la actualización y relevancia de la información presentada. En resumen, este libro es una herramienta invaluable para quienes desean adquirir una comprensión integral de los fundamentos de la contabilidad financiera.
+                    </p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">Silvio Montiel Paternina y Alcides Peña Sánchez</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">Editorial Universidad Libre</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">2023</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/fundamentos-contabilidad-financiera.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%; height: 1200px"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

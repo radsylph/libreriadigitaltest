@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<div class="container lg:mx-4">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        
+            <h3 class="w-full text-center text-4xl font-bold my-5 title">Introducción al Estudio del Derecho</h3>
+
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="card p-10 m-10">
+                <div class="card-body">
+                    <h5 class="card-title font-bold">Descripción</h5>
+                    <p class="card-text text-justify">El libro "Introducción al Estudio del Derecho" de Eduardo García Maynez, publicado por Editorial Porrúa en 2002, representa una de las obras más influyentes y fundamentales en la formación jurídica latinoamericana. Este texto clásico ofrece una visión comprehensiva de los conceptos básicos del Derecho, abordando temas esenciales como la teoría de la norma jurídica, las fuentes del derecho, los conceptos jurídicos fundamentales, la técnica jurídica y los métodos de interpretación del derecho. Con un estilo claro, sistemático y pedagógico, el autor desarrolla los principios fundamentales de la ciencia jurídica, explicando la diferencia entre derecho natural y positivo, los conceptos de persona, acto jurídico, derecho subjetivo y deber jurídico, así como las nociones de validez, vigencia y eficacia de las normas jurídicas. La obra se ha convertido en un referente indispensable para estudiantes de primer año de la carrera de Derecho y continúa siendo una guía esencial para comprender los fundamentos de la ciencia jurídica, destacándose por su claridad expositiva y su profundidad conceptual.</p>
+                    <h5 class="card-title font-bold">Autores</h5>
+                    <p class="card-text">Eduardo Garcia Maynez</p>
+                    <h5 class="card-title font-bold">Editorial</h5>
+                    <p class="card-text">Editorial Porrúa</p>
+                    <h5 class="card-title font-bold">Año de publicación</h5>
+                    <p class="card-text">2002</p>
+                </div>
+            </div>
+
+            <div class="card p-10 m-10 flex justify-center">
+                <pdf-viewer 
+                    src="/assets/books/Introduccion-al-estudio-del-derecho.pdf"
+                    [render-text]="true"
+                    [original-size]="false"
+                    style="width: 75%; height: 1200px"
+                    [zoom-scale]="'page-width'"
+                >
+                </pdf-viewer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
